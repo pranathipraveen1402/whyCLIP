@@ -17,14 +17,33 @@
                 <p>
                     Despite one image being from the trailer and the other from the movie, 
                     their traditional feature graphs appear nearly identical. This similarity suggests that the lighting, 
-                    brightness, and color variance remain largely unchanged between the two. The only noticable change is 
-                    that the hue mean is closer to 0 (Dominant tint is Red) 
+                    brightness, and color variance remain largely unchanged between the two. The only noticeable change is 
+                    that the hue mean is closer to 0 (Dominant tint is Red) in the trailer image - but not all trailer scenes necessarily have a 
+                    difference in tinting.
                 </p>
                 <ul>
-                    <li><strong>Monotone Tones: Traditional features miss fine-grained variations, making different contexts look similar.</li>
-                    <li>Lack of Robustness: They fail to capture trailer-specific color grading or visual shifts.</li>
-                    <li>Poor Contextual Representation: They ignore narrative elements and scene significance.</li>
+                    <li><strong>Monotone Tones:</strong> Traditional features miss fine-grained variations, making different contexts look similar.</li>
+                    <li><strong>Lack of Robustness:</strong> They fail to capture trailer-specific color grading or visual shifts.</li>
+                    <li><strong>Poor Contextual Representation:</strong> They ignore narrative elements and scene significance.</li>
                 </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p>
+                    CLIP is a neural network trained on (image, text) pairs, aligning visual and textual representations. 
+                    Its image encoder generates embeddings that capture semantics, enabling image-text matching. 
+                    This helps distinguish contextual differences, like trailer vs. non-trailer frames, 
+                    by associating stylistic elements and narrative cues with text.
+                </p>
+                <ul>
+                    <li><strong>Better Context Awareness:</strong>  CLIP understands scene semantics, distinguishing trailer shots from non-trailer ones.</li>
+                    <li><strong>Robust Feature Extraction:</strong> It captures stylistic changes, such as color grading and cinematography differences.</li>
+                    <li><strong>Improved Generalization:</strong> CLIP learns from large datasets, making it adaptable to various visual contexts.</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="clip.png" class="img-fluid rounded" alt="Feature Extraction Comparison">
             </div>
         </div>
     </div>
