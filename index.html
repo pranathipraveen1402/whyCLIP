@@ -11,18 +11,19 @@
         <h1 class="text-center">CLIP Feature Extraction vs Traditional Feature Extraction</h1>
         <div class="row mt-4">
             <div class="col-md-6 text-center">
-                <img src="TFDesc.png" class="img-fluid rounded" alt="Feature Extraction Illustration">
+                <img src="TFDesc1.png" class="img-fluid rounded" alt="Feature Extraction Illustration">
             </div>
             <div class="col-md-6">
                 <p>
-                    CLIP (Contrastive Language-Image Pretraining) extracts features by aligning images and text in a shared embedding space,
-                    enabling zero-shot learning. Traditional feature extraction methods, such as SIFT, HOG, and deep CNNs,
-                    rely on predefined heuristics or supervised training on specific datasets.
+                    Despite one image being from the trailer and the other from the movie, 
+                    their traditional feature graphs appear nearly identical. This similarity suggests that the lighting, 
+                    brightness, and color variance remain largely unchanged between the two. The only noticable change is 
+                    that the hue mean is closer to 0 (Dominant tint is Red) 
                 </p>
                 <ul>
-                    <li><strong>CLIP:</strong> Learns from vast amounts of image-text pairs.</li>
-                    <li><strong>Traditional Methods:</strong> Require task-specific training.</li>
-                    <li><strong>Flexibility:</strong> CLIP enables zero-shot tasks without retraining.</li>
+                    <li><strong>Monotone Tones: Traditional features miss fine-grained variations, making different contexts look similar.</li>
+                    <li>Lack of Robustness: They fail to capture trailer-specific color grading or visual shifts.</li>
+                    <li>Poor Contextual Representation: They ignore narrative elements and scene significance.</li>
                 </ul>
             </div>
         </div>
